@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const skills = [
         'React','AI', 'Node.js', 'MySQL', 'Java', 'Python',
         'JavaScript','postman', 'Angular', 'HTML', 'CSS', 'AWS',
-        'Docker', 'Kubernetes', 'Git', 'Azure', 'C#',
+        'Docker', 'Kubernetes', 'Git', 'Azure', 'csharp',
         'MongoDB', 'TypeScript', 'Linux','restapi' ,'Tableau'
     ];
 
