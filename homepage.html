@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" href="/images/homepage/logo.png">
+<title>portfolio | CSR</title>
+<link rel="stylesheet" href="src/css/homepage.css">
+<style>
+    canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+</head>
+<body>
+<div class="container">
+<nav class="navbar">
+<div class="logo-container">
+<span class="logo-text">
+<span class="csr-text">CSR</span>
+</span>
+</div>
+<div class="nav-right">
+<ul class="nav-links">
+<li><a href="src/html/about.html">About</a></li>
+<li><a href="/src/html/projects.html">Projects</a></li>
+<li><a href="src/html/Expereince.html">Experience</a></li>
+<li><a href="/src/html/contact.html">Contact</a></li>
+<li>
+<label class="toggle-switch">
+<input type="checkbox" class="dark-mode-toggle">
+<span class="slider"></span>
+</label>
+</li>
+</ul>
+</div>
+</nav>
+<canvas id="canvas" width="100" height="0"></canvas>
+<main>
+<section id="intro" class="intro">
+<!-- <p class="intro-text">Hey 👋 I'm</p> -->
+<div class="bitmoji-container">
+<div class="bitmoji-glow"></div>
+<!-- <img src="images/homepage/bitmoji.png" alt="Soummith Challa" class="bitmoji"> -->
+</div>
+<h1 class="intro-name">Soummith Challa</h1>
+<p class="intro-subtitle">.NET Full Stack Developer | Cloud Solutions Architect</p>
+</section>
+<div class="social-links">
+<a href="https://github.com/csoummith" target="_blank" rel="noopener noreferrer">
+<img src="images/homepage/github.png" alt="GitHub Profile">
+</a>
+<a href="https://www.linkedin.com/in/csoummith/" target="_blank" rel="noopener noreferrer">
+<img src="images/homepage/linkedin.png" alt="LinkedIn Profile">
+</a>
+</div>
+</main>
+</div>
+<script src="/src/js/homepage.js"></script>
+</body>
+</html>

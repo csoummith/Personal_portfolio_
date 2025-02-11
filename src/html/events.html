@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #076696;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .timeline-container {
+      width: 90%;
+      position: relative;
+      max-width: 1200px;
+    }
+
+    .ruler {
+      position: relative;
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Ruler Line */
+    .ruler-line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #444;
+    }
+
+    /* Major Ticks (Years) */
+    .tick-major {
+      position: absolute;
+      height: 30px;
+      width: 2px;
+      background-color: #fff;
+    }
+
+    .tick-major span {
+      position: absolute;
+      top: -35px;
+      color: #fff;
+      font-size: 14px;
+      transform: translateX(-50%);
+    }
+
+    /* Minor Ticks (Small Scales) */
+    .tick-minor {
+      position: absolute;
+      height: 15px;
+      width: 1px;
+      background-color: #666;
+    }
+
+    /* Small Scale Labels */
+    .tick-minor-label {
+      position: absolute;
+      top: 18px;
+      color: #fff;
+      font-size: 10px;
+      transform: translateX(-50%);
+    }
+
+    .icon-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .icon {
+      text-align: center;
+      color: #fff;
+      font-size: 12px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .icon img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 5px;
+      filter: brightness(0.8);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .icon img:hover {
+      transform: scale(1.2);
+      filter: brightness(1);
+    }
+
+    /* Description below each icon */
+    .icon p {
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      white-space: nowrap;
+      transition: opacity 0.3s ease;
+    }
+
+    .icon:hover p {
+      display: block;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="timeline-container">
+    <!-- Ruler -->
+    <div class="ruler">
+      <div class="ruler-line"></div>
+
+      <!-- Major Ticks -->
+      <div class="tick-major" style="left: 0%;">
+        <span>1986</span>
+      </div>
+      <div class="tick-major" style="left: 20%;">
+        <span>1996</span>
+      </div>
+      <div class="tick-major" style="left: 40%;">
+        <span>1997</span>
+      </div>
+      <div class="tick-major" style="left: 60%;">
+        <span>1999</span>
+      </div>
+      <div class="tick-major" style="left: 80%;">
+        <span>2001</span>
+      </div>
+      <div class="tick-major" style="left: 100%;">
+        <span>2002</span>
+      </div>
+
+      <!-- Minor Ticks and Small Scales -->
+      <div class="tick-minor" style="left: 10%;">
+        <span class="tick-minor-label">10</span>
+      </div>
+      <div class="tick-minor" style="left: 30%;">
+        <span class="tick-minor-label">30</span>
+      </div>
+      <div class="tick-minor" style="left: 50%;">
+        <span class="tick-minor-label">50</span>
+      </div>
+      <div class="tick-minor" style="left: 70%;">
+        <span class="tick-minor-label">70</span>
+      </div>
+      <div class="tick-minor" style="left: 90%;">
+        <span class="tick-minor-label">90</span>
+      </div>
+    </div>
+
+    <!-- Icons -->
+    <div class="icon-container">
+      <div class="icon">
+        <img src="https://img.icons8.com/ios-filled/50/null/baby.png" alt="1986">
+        <p>1986 - Birth</p>
+      </div>
+      <div class="icon">
+        <img src="https://img.icons8.com/ios-filled/50/null/wifi.png" alt="1996">
+        <p>1996 - Internet</p>
+      </div>
+      <div class="icon">
+        <img src="https://img.icons8.com/ios-filled/50/null/monitor.png" alt="1997">
+        <p>1997 - First PC</p>
+      </div>
+      <div class="icon">
+        <img src="https://img.icons8.com/ios-filled/50/null/html-5.png" alt="1999">
+        <p>1999 - Coding</p>
+      </div>
+      <div class="icon">
+        <img src="https://img.icons8.com/ios-filled/50/null/globe.png" alt="2001">
+        <p>2001 - Exploration</p>
+      </div>
+      <div class="icon">
+        <img src="https://img.icons8.com/ios-filled/50/null/africa.png" alt="2002">
+        <p>2002 - Travel</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

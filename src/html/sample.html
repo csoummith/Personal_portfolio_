@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio with Fullscreen Experience</title>
+    <style>
+        /* Previous styles remain the same */
+
+        .experience-item {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column; /* Changed to column */
+            justify-content: space-between; /* Space between content and skills */
+            padding: 2rem 2rem 0 2rem; /* Removed bottom padding */
+            position: relative;
+            overflow: hidden;
+            scroll-snap-align: start;
+        }
+
+        .experience-content-wrapper {
+            flex-grow: 1;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease-out;
+            padding-top: 4rem; /* Add space for navbar */
+        }
+
+        .skills-section {
+            width: 100%;
+            padding: 1.5rem 0;
+            background: rgba(11, 18, 33, 0.95);
+            backdrop-filter: blur(8px);
+            border-top: 1px solid rgba(56, 189, 248, 0.2);
+        }
+
+        .skills-ticker {
+            display: flex;
+            white-space: nowrap;
+            animation: ticker 20s linear infinite;
+            height: 100%;
+            align-items: center;
+        }
+
+        .skills-ticker-inner {
+            display: flex;
+            padding-right: 50px;
+            height: 100%;
+            align-items: center;
+        }
+
+        .skill-item {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.5rem 1.5rem;
+            margin: 0 0.5rem;
+            background: rgba(56, 189, 248, 0.1);
+            color: #38BDF8;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            white-space: nowrap;
+            height: 30px;
+        }
+
+        @keyframes ticker {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .experience-content-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* Rest of your existing styles... */
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="/homepage.html" class="csr-text">CSR</a>
+    </nav>
+    <div class="main-container">
+        <section class="landing-section">
+            <h1 class="landing-text">Experience</h1>
+        </section>
+
+        <section class="experience-section">
+            <div class="experience-item">
+                <div class="experience-content-wrapper">
+                    <div class="experience-date">
+                        <div class="experience-year">2022</div>
+                        <div class="experience-duration">Present</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Senior Full Stack Developer</h3>
+                        <div class="experience-company">Tech Innovators Inc.</div>
+                        <p class="experience-description">
+                            Led development of high-performance web applications, implementing modern
+                            architecture patterns and optimizing for scale. Mentored junior developers
+                            and established best practices for code quality.
+                        </p>
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <div class="skills-ticker">
+                        <div class="skills-ticker-inner">
+                            <span class="skill-item">React</span>
+                            <span class="skill-item">Node.js</span>
+                            <span class="skill-item">TypeScript</span>
+                            <span class="skill-item">AWS</span>
+                            <span class="skill-item">MongoDB</span>
+                            <span class="skill-item">Redux</span>
+                            <span class="skill-item">Jest</span>
+                            <span class="skill-item">CI/CD</span>
+                        </div>
+                        <div class="skills-ticker-inner">
+                            <span class="skill-item">React</span>
+                            <span class="skill-item">Node.js</span>
+                            <span class="skill-item">TypeScript</span>
+                            <span class="skill-item">AWS</span>
+                            <span class="skill-item">MongoDB</span>
+                            <span class="skill-item">Redux</span>
+                            <span class="skill-item">Jest</span>
+                            <span class="skill-item">CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-content-wrapper">
+                    <div class="experience-date">
+                        <div class="experience-year">2020</div>
+                        <div class="experience-duration">2022</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Full Stack Developer</h3>
+                        <div class="experience-company">Digital Solutions Co.</div>
+                        <p class="experience-description">
+                            Developed and maintained multiple client projects, focusing on responsive
+                            design and performance optimization. Implemented CI/CD pipelines and
+                            automated testing procedures.
+                        </p>
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <div class="skills-ticker">
+                        <div class="skills-ticker-inner">
+                            <span class="skill-item">Vue.js</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">Docker</span>
+                            <span class="skill-item">PostgreSQL</span>
+                            <span class="skill-item">Flask</span>
+                            <span class="skill-item">Vuex</span>
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">Jenkins</span>
+                        </div>
+                        <div class="skills-ticker-inner">
+                            <span class="skill-item">Vue.js</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">Docker</span>
+                            <span class="skill-item">PostgreSQL</span>
+                            <span class="skill-item">Flask</span>
+                            <span class="skill-item">Vuex</span>
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">Jenkins</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-content-wrapper">
+                    <div class="experience-date">
+                        <div class="experience-year">2018</div>
+                        <div class="experience-duration">2020</div>
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Frontend Developer</h3>
+                        <div class="experience-company">WebCraft Studios</div>
+                        <p class="experience-description">
+                            Created responsive and interactive web interfaces, optimized application
+                            performance, and collaborated with designers to implement pixel-perfect designs.
+                        </p>
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <div class="skills-ticker">
+                        <div class="skills-ticker-inner">
+                            <span class="skill-item">JavaScript</span>
+                            <span class="skill-item">React</span>
+                            <span class="skill-item">SASS</span>
+                            <span class="skill-item">Webpack</span>
+                            <span class="skill-item">HTML5</span>
+                            <span class="skill-item">CSS3</span>
+                            <span class="skill-item">Babel</span>
+                            <span class="skill-item">ESLint</span>
+                        </div>
+                        <div class="skills-ticker-inner">
+                            <span class="skill-item">JavaScript</span>
+                            <span class="skill-item">React</span>
+                            <span class="skill-item">SASS</span>
+                            <span class="skill-item">Webpack</span>
+                            <span class="skill-item">HTML5</span>
+                            <span class="skill-item">CSS3</span>
+                            <span class="skill-item">Babel</span>
+                            <span class="skill-item">ESLint</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <!-- Footer content remains the same -->
+        </footer>
+    </div>
+
+    <script>
+        // Previous intersection observer code for content animation
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.querySelector('.experience-content-wrapper').classList.add('active');
+                } else {
+                    entry.target.querySelector('.experience-content-wrapper').classList.remove('active');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all experience items
+        document.querySelectorAll('.experience-item').forEach(item => {
+            observer.observe(item);
+        });
+
+        // Pause animation on hover for skills ticker
+        document.querySelectorAll('.skills-ticker').forEach(ticker => {
+            ticker.addEventListener('mouseenter', () => {
+                ticker.style.animationPlayState = 'paused';
+            });
+            
+            ticker.addEventListener('mouseleave', () => {
+                ticker.style.animationPlayState = 'running';
+            });
+        });
+    </script>
+</body>
+</html>
