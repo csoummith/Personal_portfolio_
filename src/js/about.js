@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const container = document.querySelector('#skills-sphere');
     
     const skills = [
-        'React','AI', 'Node.js', 'MySQL', 'Java', 'Python',
-        'JavaScript','postman', 'Angular', 'HTML', 'CSS', 'AWS',
-        'Docker', 'Kubernetes', 'Git', 'Azure', 'csharp',
-        'MongoDB', 'TypeScript', 'Linux','restapi' ,'Tableau'
+        'React','AI', 'Node.js', 'MySQL', 'Java', 'Go', 'Python',
+        'JavaScript','postman', 'HTML', 'CSS', 'AWS',
+        'Docker', 'Kubernetes', 'Git', 'Azure',
+        'MongoDB', 'TypeScript', 'restapi'
     ];
 
     const options = {
