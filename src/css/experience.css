@@ -562,3 +562,70 @@
             }
         }
 
+
+
+        /* Experience highlights (bullet list) and text skill chips */
+        .experience-location {
+            color: #94A3B8;
+            font-size: 1.125rem;
+            font-weight: 400;
+        }
+
+        .experience-highlights {
+            list-style: none;
+            margin: 0 0 2rem 0;
+            padding: 0;
+            max-width: 720px;
+            display: grid;
+            gap: 0.75rem;
+        }
+
+        .experience-highlights li {
+            position: relative;
+            padding-left: 1.5rem;
+            color: #94A3B8;
+            font-size: 1.0625rem;
+            line-height: 1.65;
+        }
+
+        .experience-highlights li::before {
+            content: '▹';
+            position: absolute;
+            left: 0;
+            color: #38BDF8;
+        }
+
+        .skill-item--label {
+            width: auto;
+            padding: 0 1.1rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            white-space: nowrap;
+            margin: 0 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .experience-highlights li {
+                font-size: 0.95rem;
+            }
+            .experience-location {
+                display: block;
+                font-size: 1rem;
+            }
+        }
+
+        /* Let grid children shrink so long titles/bullets wrap instead of widening the page */
+        .experience-content,
+        .experience-date {
+            min-width: 0;
+        }
+
+        .experience-content-wrapper {
+            box-sizing: border-box;
+            min-width: 0;
+        }
+
+        /* The item is width: 100% plus padding; without border-box it overflows the viewport by 4rem */
+        .experience-item {
+            box-sizing: border-box;
+        }

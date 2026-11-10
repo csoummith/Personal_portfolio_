@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Text Animation for Subtitle
     const subtitleElement = document.querySelector('.intro-subtitle');
     const phrases = [
-        '.Net developer',
-        'software Developer', 
+        'Full-Stack Software Engineer',
+        'Java & Go Developer', 
         'Tech Enthusiast',
         'Problem Solver'
     ];
@@ -86,8 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Text Animation for Subtitle
     const subtitleElement = document.querySelector('.intro-subtitle');
     const phrases = [
-        '.Net developer',
-        'software Developer', 
+        'Full-Stack Software Engineer',
+        'Java & Go Developer', 
         'Tech Enthusiast',
         'Problem Solver'
     ];
